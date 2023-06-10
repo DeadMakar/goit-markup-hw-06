@@ -919,7 +919,7 @@ img {
   color: #8e8f99;
 }
 
-.check-text span {
+.privacy-check {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -937,7 +937,7 @@ img {
   color: var(--first-main-color);
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .privacy-check {
   border: none;
   background: var(--second-main-color);
   border: 1px solid var(--second-main-color);
