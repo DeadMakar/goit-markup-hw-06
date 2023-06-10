@@ -910,7 +910,6 @@ img {
   margin-bottom: 24px;
 }
 .check-text {
-  display: flex;
   align-items: center;
   font-weight: 400;
   font-size: 12px;
@@ -929,7 +928,8 @@ img {
   justify-content: center;
   margin-right: 8px;
   fill: transparent;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
 
 .check-link {
@@ -937,7 +937,7 @@ img {
   color: var(--first-main-color);
 }
 
-.modal-check:checked + .privacy-check {
+.modal-check:checked + span {
   border: none;
   background: var(--second-main-color);
   border: 1px solid var(--second-main-color);
