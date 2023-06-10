@@ -782,7 +782,7 @@ img {
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -826,8 +826,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  padding-top: 48px;
-  margin-bottom: 34px;
+  margin-bottom: 16px;
 }
 
 .modal-field {
@@ -842,6 +841,8 @@ img {
   padding-left: 38px;
   color: var(--title-color);
   outline: transparent;
+  background-color: transparent;
+  transition: border-color var(--transition);
 }
 
 .modal-input:focus {
@@ -853,10 +854,11 @@ img {
 }
 
 .input-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
   margin-bottom: 4px;
 }
 
@@ -876,6 +878,11 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill var(--transition);
+}
+
+.modal-field-comment {
+  margin-bottom: 16px;
 }
 
 .modal-comment {
@@ -884,11 +891,24 @@ img {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  color: var(--title-color);
   outline: transparent;
   resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color var(--transition);
 }
 
+.modal-comment:focus {
+  border-color: var(--first-main-color);
+}
+
+.modal-field-check {
+  margin-bottom: 24px;
+}
 .check-text {
   display: flex;
   align-items: center;
@@ -904,11 +924,12 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
   fill: transparent;
+  transition: background-color var(--transition);
 }
 
 .check-link {
