@@ -937,7 +937,7 @@ img {
   color: var(--first-main-color);
 }
 
-.modal-check:checked + span {
+.modal-check:checked + .check-text span {
   border: none;
   background: var(--second-main-color);
   border: 1px solid var(--second-main-color);
