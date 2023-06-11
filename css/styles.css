@@ -900,7 +900,6 @@ img {
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   transition: border-color var(--transition);
-  transition: color var(--transition);
 }
 
 .modal-comment:focus {
