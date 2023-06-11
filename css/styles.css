@@ -407,8 +407,8 @@ img {
   background-position: center;
   max-width: 1440px;
   background-size: cover;
-  -webkit-animation: kenburns-top 5000ms ease-out reverse both;
-  animation: kenburns-top 5000ms ease-out reverse both;
+  -webkit-animation: kenburns-top 2000ms ease-out reverse both;
+  animation: kenburns-top 2000ms ease-out reverse both;
 }
 .hero-container {
 }
@@ -897,7 +897,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--title-color);
   background-color: transparent;
   transition: border-color var(--transition);
 }
